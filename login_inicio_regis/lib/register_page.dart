@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_inicio_regis/loginpage.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
@@ -92,8 +93,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 },
               ),
               SizedBox(height: 16),
+
               ElevatedButton(
-                onPressed: _register,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                  );
+                },
                 child: Text('Regístrate'),
               ),
             ],
