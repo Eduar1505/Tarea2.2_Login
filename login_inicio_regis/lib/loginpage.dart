@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
     String password = _passwordController.text.trim();
 
     if (email.endsWith('@unah.hn') && password.isNotEmpty) {
-      if (email == 'ejemplo@unah.hn' && password == '12345678910') {
+      if (email == 'eduar.ventura@unah.hn' && password == '20222001478') {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
